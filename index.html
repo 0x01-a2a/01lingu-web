@@ -8,25 +8,25 @@
   <meta property="og:title" content="01Lingu — The private AI language tutor">
   <meta property="og:description" content="On-device AI language practice. Private by design. No internet required after setup.">
   <meta property="og:type" content="website">
-  <meta name="theme-color" content="#f5fafb">
+  <meta name="theme-color" content="#080e10">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Inter:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg:          #f5fafb;
-      --bg-card:     #ffffff;
-      --bg-alt:      #ecf6f8;
-      --accent:      #0891b2;
-      --accent-d:    #0e7490;
-      --accent-soft: rgba(8,145,178,0.09);
-      --accent-border: rgba(8,145,178,0.20);
-      --text:        #0c1f26;
-      --soft:        #5c7d87;
-      --softer:      #98b8c0;
-      --border:      rgba(0,0,0,0.07);
-      --shadow:      0 2px 12px rgba(0,0,0,0.07);
-      --shadow-lg:   0 8px 32px rgba(0,0,0,0.10);
+      --bg:          #080e10;
+      --bg-card:     #0d1618;
+      --bg-alt:      #141f22;
+      --accent:      #2dd4bf;
+      --accent-d:    #14b8a6;
+      --accent-soft: rgba(45,212,191,0.12);
+      --accent-border: rgba(45,212,191,0.25);
+      --text:        #e8f5f4;
+      --soft:        rgba(232,245,244,0.55);
+      --softer:      rgba(232,245,244,0.30);
+      --border:      rgba(255,255,255,0.08);
+      --shadow:      0 2px 12px rgba(0,0,0,0.35);
+      --shadow-lg:   0 8px 32px rgba(0,0,0,0.50);
       --mono:        'JetBrains Mono', monospace;
       --sans:        'Inter', sans-serif;
       --serif:       'Instrument Serif', serif;
@@ -49,7 +49,7 @@
 
     nav {
       position: sticky; top: 0; z-index: 100;
-      background: rgba(245,250,251,0.88);
+      background: rgba(8,14,16,0.88);
       backdrop-filter: saturate(180%) blur(16px);
       border-bottom: 1px solid var(--border);
     }
@@ -79,13 +79,13 @@
     .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
     .btn { display: inline-flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 600; padding: 13px 24px; border-radius: 12px; text-decoration: none; transition: transform .15s, box-shadow .15s; }
     .btn:hover { transform: translateY(-1px); }
-    .btn-primary { background: var(--accent); color: white; box-shadow: 0 2px 12px rgba(8,145,178,0.28); }
-    .btn-primary:hover { box-shadow: 0 4px 20px rgba(8,145,178,0.36); }
+    .btn-primary { background: var(--accent); color: #080e10; box-shadow: 0 2px 12px rgba(45,212,191,0.28); }
+    .btn-primary:hover { box-shadow: 0 4px 20px rgba(45,212,191,0.36); }
     .btn-ghost { background: var(--bg-card); color: var(--text); border: 1px solid var(--border); box-shadow: var(--shadow); }
 
     .hero-visual { display: flex; justify-content: center; position: relative; }
     .phone-wrap { position: relative; }
-    .phone-frame { width: 260px; height: 520px; background: var(--bg-card); border-radius: 40px; border: 1.5px solid var(--border); box-shadow: 0 24px 64px rgba(0,0,0,0.12), 0 4px 16px rgba(0,0,0,0.07); overflow: hidden; position: relative; }
+    .phone-frame { width: 260px; height: 520px; background: var(--bg-card); border-radius: 40px; border: 1.5px solid var(--border); box-shadow: 0 24px 64px rgba(0,0,0,0.5), 0 4px 16px rgba(0,0,0,0.3); overflow: hidden; position: relative; }
     .phone-notch { position: absolute; top: 14px; left: 50%; transform: translateX(-50%); width: 80px; height: 22px; background: var(--text); border-radius: 11px; z-index: 10; }
     .phone-screen { padding: 52px 14px 14px; height: 100%; display: flex; flex-direction: column; gap: 8px; }
     .phone-header { font-family: var(--mono); font-size: 9px; font-weight: 700; color: var(--soft); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 4px; }
@@ -125,8 +125,8 @@
     .data-flow { display: flex; flex-direction: column; gap: 10px; }
     .data-row { display: flex; align-items: center; gap: 12px; font-size: 13px; font-weight: 500; }
     .data-badge { font-family: var(--mono); font-size: 10px; font-weight: 700; padding: 4px 10px; border-radius: 99px; white-space: nowrap; }
-    .data-badge.on { background: rgba(34,197,94,0.12); color: #16a34a; }
-    .data-badge.off { background: rgba(239,68,68,0.10); color: #dc2626; }
+    .data-badge.on { background: rgba(34,197,94,0.15); color: #4ade80; }
+    .data-badge.off { background: rgba(239,68,68,0.15); color: #f87171; }
 
     footer { padding: 64px 0 40px; border-top: 1px solid var(--border); }
     .footer-inner { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 48px; }
